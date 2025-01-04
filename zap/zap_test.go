@@ -7,7 +7,7 @@ import (
     "encoding/json"
     "github.com/satori/go.uuid"
 )
-
+//go test -v -test.run Test_NewZapLogger
 func Test_NewZapLogger(t *testing.T) {
     var cnf *ZapConfig = &ZapConfig{
         Level: "info",
