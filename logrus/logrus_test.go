@@ -6,6 +6,7 @@ import (
     "github.com/satori/go.uuid"
 )
 
+//go test -v -test.run Test_NewLogrusLogger
 func Test_NewLogrusLogger(t *testing.T) {
     var cnf *LogrusConfig = &LogrusConfig{
         Level: "info",
