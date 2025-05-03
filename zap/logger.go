@@ -17,6 +17,10 @@ func (l *Logger) Panicf(format string, args ...interface{}) {
     s,f:= l.GetOtherFileds(format, args...)
    l.Log.Panic(s,f...)
 }
+func (l *Logger) Warnf(format string, args ...interface{}) {
+    s,f:= l.GetOtherFileds(format, args...)
+   l.Log.Warn(s,f...)
+}
 
 func (l *Logger) Fatalf(format string, args ...interface{}) {
     s,f:= l.GetOtherFileds(format, args...)
